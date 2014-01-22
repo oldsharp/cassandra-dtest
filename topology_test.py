@@ -136,7 +136,7 @@ class TestTopology(Tester):
         time.sleep(.5)
 
         node4 = new_node(cluster, token=tokens[2])
-        node4.start(replace_token=tokens[2])
+        node4.start(replace_address=node3.address())
         time.sleep(.5)
         cluster.cleanup()
         time.sleep(.5)
